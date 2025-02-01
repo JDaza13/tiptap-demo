@@ -1,0 +1,35 @@
+$scrollbar-thumb-bg: #323232;
+$scrollbar-hover-thumb-bg: #344054;
+$scrollbar-bg: #1018281a;
+
+html {
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 0.5rem;
+    background-color: $scrollbar-bg;
+    border: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    min-height: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: $scrollbar-thumb-bg;
+    &:hover {
+      background-color: $scrollbar-hover-thumb-bg;
+    }
+  }
+}
+
+.demo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.editor-img {
+  margin: 0 auto;
+}

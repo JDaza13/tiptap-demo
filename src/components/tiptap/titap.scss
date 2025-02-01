@@ -1,0 +1,23 @@
+$shadow-color: rgba(0, 0, 0, 0.15);
+$shadow-hover-color: rgba(0, 0, 0, 0.25);
+$border-radius: 12px;
+$transition-speed: 0.3s;
+
+.editor-container {
+  background: #fff;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 10px $shadow-color;
+  padding: 1.5rem;
+  transition: box-shadow $transition-speed ease-in-out;
+  &:hover {
+    box-shadow: 0 6px 15px $shadow-hover-color;
+  }
+}
+
+.editor-json-preview {
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  max-height: 450px;
+  overflow-y: scroll;
+  padding: 1rem;
+}
